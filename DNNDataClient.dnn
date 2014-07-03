@@ -1,0 +1,76 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="DNNDataClient" type="Module" version="00.00.01">
+      <friendlyName>DNNDataClient</friendlyName>
+      <description>TalkDotNet.com DNNDataClient module</description>
+      <iconFile>Images/icon_extensions.gif</iconFile>
+      <owner>
+        <name>TalkDotNet.com</name>
+        <organization>TalkDotNet.com</organization>
+        <url>http://www.TalkDotNet.com</url>
+        <email>modules@TalkDotNet.com</email>
+      </owner>
+      <license src="License.txt"></license>
+      <releaseNotes src="ReleaseNotes.txt"></releaseNotes>
+      <dependencies>
+        <dependency type="CoreVersion">07.00.02</dependency>
+      </dependencies>
+      
+      <components>
+        <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>DesktopModules/DNNDataClient</basePath>
+            <resourceFile>
+              <name>Resources.zip</name>
+            </resourceFile>
+          </resourceFiles>
+        </component>
+
+        <component type="Module">
+          <desktopModule>
+            <moduleName>DNNDataClient</moduleName>
+            <foldername>DNNDataClient</foldername>
+            <businessControllerClass>TalkDotNet.Modules.DNNDataClient.Components.FeatureController</businessControllerClass>
+            <supportedFeatures />
+            <moduleDefinitions>
+              <moduleDefinition>
+                <friendlyName>DNNDataClient</friendlyName>
+                <defaultCacheTime>0</defaultCacheTime>
+                <moduleControls>
+                  <moduleControl>
+                    <controlKey />
+                    <controlSrc>DesktopModules/DNNDataClient/View.ascx</controlSrc>
+                    <supportsPartialRendering>False</supportsPartialRendering>
+                    <controlTitle />
+                    <controlType>View</controlType>
+                    <iconFile />
+                    <helpUrl />
+                    <viewOrder>0</viewOrder>
+                  </moduleControl>
+                  <moduleControl>
+                    <controlKey>Settings</controlKey>
+                    <controlSrc>DesktopModules/DNNDataClient/Settings.ascx</controlSrc>
+                    <supportsPartialRendering>False</supportsPartialRendering>
+                    <controlTitle>DNNDataClient Settings</controlTitle>
+                    <controlType>Edit</controlType>
+                    <iconFile />
+                    <helpUrl />
+                    <viewOrder>0</viewOrder>
+                  </moduleControl>
+                </moduleControls>
+              </moduleDefinition>
+            </moduleDefinitions>
+          </desktopModule>
+        </component>
+        <component type="Assembly">
+          <assemblies>
+            <assembly>
+              <name>DNNDataClient.dll</name>
+              <path>bin</path>
+            </assembly>
+          </assemblies>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>

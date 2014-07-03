@@ -1,0 +1,5 @@
+D:\Websites\DNNDev\bin\DNNDataClient.dll
+D:\Websites\DNNDev\bin\DNNDataClient.pdb
+D:\Websites\DNNDev\DesktopModules\DNNDataClient\obj\Debug\DNNDataClient.dll
+D:\Websites\DNNDev\DesktopModules\DNNDataClient\obj\Debug\DNNDataClient.pdb
+D:\Websites\DNNDev\DesktopModules\DNNDataClient\obj\Debug\DNNDataClient.csprojResolveAssemblyReference.cache
